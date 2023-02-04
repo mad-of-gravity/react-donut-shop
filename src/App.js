@@ -4,7 +4,7 @@ import PaymentScreen from "./components/pages/Payment/PaymentScreen";
 
 function App() {
   return (
-    <PaymentScreen />
+    <MenuScreen />
   );
 }
 

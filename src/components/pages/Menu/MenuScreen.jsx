@@ -58,7 +58,6 @@ const MenuScreen = () => {
             height="90px"
           />
         </div>
-
         <div
           className="menu-element"
           onClick={() => handleMenuElementClick("assets/marble_magic.svg")}
