@@ -20,7 +20,7 @@ const PaymentScreen = () => {
     },
 
     middle: {
-      margin: "-15px 0",
+      margin: "-12px 0",
       padding: "4px 0",
       fontFamily: "'Outfit', sans-serif",
       fontWeight: "900",
@@ -31,7 +31,7 @@ const PaymentScreen = () => {
     },
 
     large: {
-      margin: "0",
+      margin: "-3px 0",
       padding: "0",
       fontFamily: "'Outfit', sans-serif",
       fontWeight: "900",
