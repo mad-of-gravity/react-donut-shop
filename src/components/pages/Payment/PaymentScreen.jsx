@@ -2,11 +2,10 @@ import "./styles.css";
 import Title from "../../Title/Title";
 import Donut from "../../DonutComponent/Donut";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PaymentScreen = () => {
-  useEffect(() => {
-    document.body.style.backgroundColor = "#FF86B3";
-  }, []);
+  const navigate = useNavigate();
 
   const titleStyle = {
     small: {
@@ -22,7 +21,7 @@ const PaymentScreen = () => {
 
     middle: {
       margin: "-15px 0",
-      padding: "0",
+      padding: "4px 0",
       fontFamily: "'Outfit', sans-serif",
       fontWeight: "900",
       fontSize: "64px",
@@ -43,8 +42,14 @@ const PaymentScreen = () => {
     },
   };
 
+  //Change the background color when the component is mounted
+  useEffect(() => {
+    document.body.style.backgroundColor = "#FF86B3";
+  }, []);
+
   const handlePaymentButtonClick = (selectedButton) => {
     console.log(selectedButton + " button has been clicked!");
+    navigate("/preparation");
   };
 
   return (

@@ -2,8 +2,11 @@ import "./styles.css";
 import Title from "../../Title/Title";
 import Donut from "../../DonutComponent/Donut";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const MenuScreen = () => {
+  const navigate = useNavigate();
+
   const titleStyle = {
     small: {
       margin: "-15px 0",
@@ -36,6 +39,7 @@ const MenuScreen = () => {
   //Handles payment button clicks
   const handleMenuElementClick = (imgUrl) => {
     localStorage.setItem("selected donut", imgUrl);
+    navigate("/payment");
   };
 
   return (
