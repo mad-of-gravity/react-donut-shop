@@ -7,6 +7,8 @@
     align-items: center;
     align-self: flex-start;
     height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container .title {
@@ -25,4 +27,25 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.footer {
+    align-self: flex-end;
+    width: 100vw;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 -100px 0;
+}
+
+.footer .sky-shaped {
+    width: 250px;
+    margin: 20px 0 0 -150px;
+}
+
+.footer .unicorn-dust {
+    width: 250px;
+    margin: 220px -100px -100px 0;
 }
