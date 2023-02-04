@@ -30,22 +30,23 @@
 }
 
 .footer {
-    align-self: flex-end;
+    position: relative;
     width: 100vw;
-    height: 100%;
+    height: 40vh;
     background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 -100px 0;
+    overflow: hidden;
 }
 
 .footer .sky-shaped {
+    position: absolute;
     width: 250px;
-    margin: 20px 0 0 -150px;
+    left: -120px;
+    top: 20px;
 }
 
 .footer .unicorn-dust {
+    position: absolute;
     width: 250px;
-    margin: 220px -100px -100px 0;
+    right: -80px;
+    bottom: -120px;
 }
