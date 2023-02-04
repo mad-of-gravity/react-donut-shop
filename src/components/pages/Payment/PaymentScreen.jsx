@@ -1,7 +1,12 @@
 import "./styles.css";
 import Title from "../../Title/Title";
+import { useEffect } from "react";
 
 const PaymentScreen = () => {
+
+    useEffect(() => {
+        document.body.style.backgroundColor = "#FF86B3";
+    }, []);
 
     const titleStyle = {
         small: {
