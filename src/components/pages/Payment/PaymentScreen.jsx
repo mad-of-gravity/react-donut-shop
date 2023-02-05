@@ -47,8 +47,8 @@ const PaymentScreen = () => {
     document.body.style.backgroundColor = "#FF86B3";
   }, []);
 
+  
   const handlePaymentButtonClick = (selectedButton) => {
-    console.log(selectedButton + " button has been clicked!");
     navigate("/preparation");
   };
 
