@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Donut from "../../DonutComponent/Donut";
 import Title from "../../TitleComponent/Title";
 import "./styles.css";
