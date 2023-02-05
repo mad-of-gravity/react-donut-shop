@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Donut from "../../DonutComponent/Donut";
 import Title from "../../TitleComponent/Title";
 import { useNavigate } from "react-router-dom";
-import "./styles.css";
+import "./ReadyScreen.css";
 
 const ReadyScreen = () => {
   const [donutURL, setDonutURL] = useState("");

@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./MenuScreen.css";
 import Title from "../../TitleComponent/Title";
 import Donut from "../../DonutComponent/Donut";
 import { useEffect } from "react";
