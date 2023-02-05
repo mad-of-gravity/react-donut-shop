@@ -18,6 +18,9 @@ const ReadyScreen = () => {
   };
 
   useEffect(() => {
+    //Change the background after the component is mounted
+    document.body.style.backgroundColor = "#21e8e5";
+
     const url = localStorage.getItem("selected donut");
     setDonutURL(url);
   }, []);

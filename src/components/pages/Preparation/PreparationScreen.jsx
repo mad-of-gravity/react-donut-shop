@@ -27,7 +27,7 @@ const PreparationScreen = () => {
     setDonutURL(selectedDonut);
 
     //Navigate to ReadyScreen after 5 seconds
-    const intervalId = setTimeout(() => navigate("/"), 5000);
+    const intervalId = setTimeout(() => navigate("/ready"), 5000);
     return () => clearInterval(intervalId);
   }, []);
  
