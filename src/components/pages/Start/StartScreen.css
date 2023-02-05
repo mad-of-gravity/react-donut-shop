@@ -62,15 +62,16 @@
     position: absolute;
     top: -30px;
     left: -50px;
+    filter: drop-shadow(0 1rem 0.4rem rgba(0, 0, 0, 0.3));
 }
 
 .donut-elements .sugar-particles {
     width: 580px;
     height: 460px;
     position: absolute;
-    top: -120px;
+    top: -140px;
     left: -60px;
-    transform: rotate(-180deg) scale(.8);
+    transform: rotate(-160deg) scale(.8);
 }
 
 .donut-elements .true-blood-donut {
@@ -78,4 +79,5 @@
     position: absolute;
     top: 160px;
     right: -20px;
+    filter: drop-shadow(0 1rem 0.4rem rgba(0, 0, 0, 0.3));
 }

@@ -16,7 +16,7 @@ const Donut = ({ animate, variant = "unicorn_dust", ...props }) => {
 
   useEffect(() => {
     //Later this will be useful for us in the css for animating the donut..
-    const donutClass = animate ? "animate" : "static";
+    const donutClass = animate ? "animate donut" : "static donut";
     setDonutClassName(donutClass);
 
     //Getting the donut url
@@ -31,6 +31,7 @@ const Donut = ({ animate, variant = "unicorn_dust", ...props }) => {
       alt={donuts[variant]}
       width={props.width}
       height={props.height}
+      onClick={props.onClick}
     />
   );
 };

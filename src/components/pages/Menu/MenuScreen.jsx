@@ -50,48 +50,39 @@ const MenuScreen = () => {
       </div>
 
       <div className="menu-elements">
-        <div
-          className="menu-element"
-          onClick={() => handleMenuElementClick("sky_shaped")}
-        >
+        <div className="menu-element">
           <h2 className="donut-description">SKY SHAPED</h2>
           <Donut
             animate
             variant="sky_shaped"
             width="90px"
             height="90px"
+            onClick={() => handleMenuElementClick("sky_shaped")}
           />
         </div>
-        <div
-          className="menu-element"
-          onClick={() => handleMenuElementClick("marble_magic")}
-        >
+        <div className="menu-element">
           <h2 className="donut-description">MARBLE MAGIC</h2>
           <Donut
             animate
             variant="marble_magic"
             width="90px"
             height="90px"
+            onClick={() => handleMenuElementClick("marble_magic")}
           />
         </div>
 
-        <div
-          className="menu-element"
-          onClick={() => handleMenuElementClick("true_blood")}
-        >
+        <div className="menu-element">
           <h2 className="donut-description">TRUE BLOOD</h2>
           <Donut
             animate
             variant="true_blood"
             width="90px"
             height="90px"
+            onClick={() => handleMenuElementClick("true_blood")}
           />
         </div>
 
-        <div
-          className="menu-element"
-          onClick={() => handleMenuElementClick("unicorn_dust")}
-        >
+        <div className="menu-element">
           <h2 className="donut-description">UNICORN DUST</h2>
           <Donut
             className="donut-image"
@@ -99,6 +90,7 @@ const MenuScreen = () => {
             variant="unicorn_dust"
             width="90px"
             height="90px"
+            onClick={() => handleMenuElementClick("unicorn_dust")}
           />
         </div>
       </div>
