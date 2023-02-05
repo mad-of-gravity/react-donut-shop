@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Poppins:wght@100;400&display=swap');
 
-.container {
-    width: 100%;
-    height: 50vh;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+
+.preparation-content {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
-.container .selected-donut {
-    width: 60%;
-    height: 30%;
-    margin: -65% auto 30% auto;
-    z-index: 1;
+.preparation-content .selected-donut {
+    --mobile-screen-width: 428px;
+    --donut-width: 250px;
+    /*Whith this expression we position the donut in the center of the screen*/
+    --donut-position: calc(var(--mobile-screen-width) / 2 - var(--donut-width) / 2);
+
+    width: var(--donut-width);
+    position: absolute;
+    top: 140px;
+    left: var(--donut-position);
 }
 
-.container .sparkles {
-    width: 900px;
-    height: 876px;
-    margin: -220% auto 30% auto;
-    transform: rotate(90deg);
-    z-index: 0;
+.preparation-content .sugar-sparkles {
+    width: 220px;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    transform: scale(1.8) rotate(200deg);
+}
+
+.preparation-content .preparing {
+    --mobile-screen-height: 926px;
+    --offset: -100px;
+    --vertical-position: calc(var(--mobile-screen-height) / 2 - var(--offset));
+    position: absolute;
+    top: var(--vertical-position);
+    left: 100px;
 }

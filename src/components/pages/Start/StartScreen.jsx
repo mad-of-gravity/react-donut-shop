@@ -75,7 +75,7 @@ const StartScreen = () => {
             <Title sx={titleStyle.small}>THE</Title>
             <Title sx={titleStyle.large}>DONUT SHOP</Title>
           </div>
-          <button className="start-button">Start</button>
+          <button className="start-button" onClick={handleStartClick}>Start</button>
         </div>
       </div>
     </>

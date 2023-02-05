@@ -32,7 +32,7 @@ const PreparationScreen = () => {
   }, []);
  
   return (
-    <div className="container">
+    <div className="preparation-content">
       <div className="selected-donut">
         <Donut
           variant="animate"
@@ -40,9 +40,10 @@ const PreparationScreen = () => {
           width="auto"
           height="auto"
         />
+      </div>
+
+      <div className="sugar-sparkles">
         <Donut
-          className="sparkles"
-          variant="static"
           donutSrc="assets/sparkles.svg"
           width="auto"
           height="auto"
