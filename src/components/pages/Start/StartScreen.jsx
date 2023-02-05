@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import Title from "../../TitleComponent/Title";
 import Donut from "../../DonutComponent/Donut";
+import { useNavigate } from "react-router-dom";
 import "./StartScreen.css";
 
 const StartScreen = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     //Change the background after the component is mounted
     document.body.style.backgroundColor = "#FF86B3";
@@ -29,6 +32,10 @@ const StartScreen = () => {
       padding: "0",
     },
   };
+
+  const handleStartClick = () => {
+    navigate("/menu");
+  }
 
   return (
     <>
