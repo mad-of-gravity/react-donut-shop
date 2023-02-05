@@ -52,24 +52,24 @@ const MenuScreen = () => {
       <div className="menu-elements">
         <div
           className="menu-element"
-          onClick={() => handleMenuElementClick("assets/sky_shaped.svg")}
+          onClick={() => handleMenuElementClick("sky_shaped")}
         >
           <h2 className="donut-description">SKY SHAPED</h2>
           <Donut
-            variant="animate"
-            donutSrc="assets/sky_shaped.svg"
+            animate
+            variant="sky_shaped"
             width="90px"
             height="90px"
           />
         </div>
         <div
           className="menu-element"
-          onClick={() => handleMenuElementClick("assets/marble_magic.svg")}
+          onClick={() => handleMenuElementClick("marble_magic")}
         >
           <h2 className="donut-description">MARBLE MAGIC</h2>
           <Donut
-            variant="animate"
-            donutSrc="assets/marble_magic.svg"
+            animate
+            variant="marble_magic"
             width="90px"
             height="90px"
           />
@@ -77,12 +77,12 @@ const MenuScreen = () => {
 
         <div
           className="menu-element"
-          onClick={() => handleMenuElementClick("assets/true_blood.svg")}
+          onClick={() => handleMenuElementClick("true_blood")}
         >
           <h2 className="donut-description">TRUE BLOOD</h2>
           <Donut
-            variant="animate"
-            donutSrc="assets/true_blood.svg"
+            animate
+            variant="true_blood"
             width="90px"
             height="90px"
           />
@@ -90,13 +90,13 @@ const MenuScreen = () => {
 
         <div
           className="menu-element"
-          onClick={() => handleMenuElementClick("assets/unicorn_dust.svg")}
+          onClick={() => handleMenuElementClick("unicorn_dust")}
         >
           <h2 className="donut-description">UNICORN DUST</h2>
           <Donut
             className="donut-image"
-            variant="animate"
-            donutSrc="assets/unicorn_dust.svg"
+            animate
+            variant="unicorn_dust"
             width="90px"
             height="90px"
           />

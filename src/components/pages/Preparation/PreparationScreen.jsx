@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Donut from "../../DonutComponent/Donut";
 import Title from "../../TitleComponent/Title";
@@ -7,8 +7,6 @@ import "./PreparationScreen.css";
 
 const PreparationScreen = () => {
   const navigate = useNavigate();
-  const [donutURL, setDonutURL] = useState("");
-
 
   const labelStyle = { 
     fontFamily: "'Outfit', sans-serif",
@@ -21,11 +19,7 @@ const PreparationScreen = () => {
   useEffect(() => {
     //Change the background after the component is mounted
     document.body.style.backgroundColor = "#FFE84A";
-
-    //Getting the selected donut URL from the local storage
-    const selectedDonut = localStorage.getItem("selected donut");
-    setDonutURL(selectedDonut);
-
+    
     //Navigate to ReadyScreen after 5 seconds
     const intervalId = setTimeout(() => navigate("/ready"), 5000);
     return () => clearInterval(intervalId);
@@ -35,8 +29,8 @@ const PreparationScreen = () => {
     <div className="preparation-content">
       <div className="selected-donut">
         <Donut
-          variant="animate"
-          donutSrc={donutURL}
+          animate 
+          variant={localStorage.getItem("selected donut")}
           width="auto"
           height="auto"
         />
@@ -44,7 +38,8 @@ const PreparationScreen = () => {
 
       <div className="sugar-sparkles">
         <Donut
-          donutSrc="assets/sparkles.svg"
+          animate={false}
+          variant="sparkles"
           width="auto"
           height="auto"
         />

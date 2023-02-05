@@ -1,7 +1,30 @@
+import { useEffect, useState } from "react";
 import "./Donut.css";
 
-const Donut = ({variant, donutSrc, width, height}) => {
-    return <img className={variant} src={donutSrc} alt="Donut" width={width} height={height}/>;
+const Donut = ({animate, variant="unicorn_dust", ...props}) => {
+    const [donutClassName, setDonutClassName] = useState("");
+    const [donutURL, setDonutURL] = useState("");
+
+    //Donut variants and their url's
+    const donuts = {
+        marble_magic: "assets/marble_magic.svg",
+        sky_shaped: "assets/sky_shaped.svg",
+        sparkles: "assets/sparkles.svg",
+        true_blood: "assets/true_blood.svg",
+        unicorn_dust: "assets/unicorn_dust.svg",
+    }
+
+    useEffect(() => {
+        //Later this will be useful for us in the css for animating the donut..
+        const donutClass = animate ? "animate" : "static";
+        setDonutClassName(donutClass);
+
+        //Getting the donut url
+        const variantURL = donuts[variant];
+        setDonutURL(variantURL);
+    }, []);
+
+    return <img className={donutClassName} src={donutURL} alt="Donut" width={props.width} height={props.height}/>;
 }
 
 export default Donut;

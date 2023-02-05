@@ -44,8 +44,8 @@ const StartScreen = () => {
         <div className="donut-elements">
           <div className="unicorn-donut">
             <Donut
-              variant="static"
-              donutSrc="assets/unicorn_dust.svg"
+              animate={false}
+              variant="unicorn_dust"
               width="auto"
               height="auto"
             />
@@ -53,8 +53,8 @@ const StartScreen = () => {
 
           <div className="sugar-particles">
             <Donut
-              variant="static"
-              donutSrc="assets/sparkles.svg"
+              animate={false}
+              variant="sparkles"
               width="auto"
               height="auto"
             />
@@ -62,8 +62,8 @@ const StartScreen = () => {
 
           <div className="true-blood-donut">
             <Donut
-              variant="static"
-              donutSrc="assets/true_blood.svg"
+              animate={false}
+              variant="true_blood"
               width="auto"
               height="auto"
             />

@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Donut from "../../DonutComponent/Donut";
 import Title from "../../TitleComponent/Title";
 import { useNavigate } from "react-router-dom";
 import "./ReadyScreen.css";
 
 const ReadyScreen = () => {
-  const [donutURL, setDonutURL] = useState("");
   const navigate = useNavigate();
 
   const titleStyle = {
@@ -20,9 +19,6 @@ const ReadyScreen = () => {
   useEffect(() => {
     //Change the background after the component is mounted
     document.body.style.backgroundColor = "#21e8e5";
-
-    const url = localStorage.getItem("selected donut");
-    setDonutURL(url);
   }, []);
 
   //Redirect to start screen
@@ -36,8 +32,8 @@ const ReadyScreen = () => {
       <div className="ready-screen-container">
         <div className="selected-donut">
           <Donut
-            variant="static"
-            donutSrc={donutURL}
+            animate={false}
+            variant={localStorage.getItem("selected donut")}
             width="auto"
             height="auto"
           />

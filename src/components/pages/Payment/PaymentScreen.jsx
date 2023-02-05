@@ -79,18 +79,16 @@ const PaymentScreen = () => {
       <div className="footer">
         <div className="sky-shaped">
           <Donut
-            className="sky-shaped"
-            variant="static"
-            donutSrc="assets/sky_shaped.svg"
+            animate={false}
+            variant="sky_shaped"
             width="auto"
             height="auto"
           />
         </div>
         <div className="unicorn-dust">
           <Donut
-            className="unicorn-dust"
-            variant="static"
-            donutSrc="assets/unicorn_dust.svg"
+            animate={false}
+            variant="unicorn_dust"
             width="auto"
             height="auto"
           />
