@@ -14,7 +14,7 @@
 .container .title {
     display: flex;
     flex-direction: column;
-    margin: 0 0 90px 0;
+    margin: 60px 0 50px 0;
 }
 
 .pay-button {
@@ -41,12 +41,12 @@
     position: absolute;
     width: 250px;
     left: -120px;
-    top: 20px;
+    top: 70px;
 }
 
 .footer .unicorn-dust {
     position: absolute;
     width: 250px;
     right: -80px;
-    bottom: -120px;
+    bottom: -100px;
 }
