@@ -42,7 +42,7 @@ const PreparationScreen = () => {
         />
         <Donut
           className="sparkles"
-          variant="sparkles"
+          variant="static"
           donutSrc="assets/sparkles.svg"
           width="auto"
           height="auto"

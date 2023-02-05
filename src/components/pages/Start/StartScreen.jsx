@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Title from "../../TitleComponent/Title";
+import Donut from "../../DonutComponent/Donut";
 import "./StartScreen.css";
 
 const StartScreen = () => {
@@ -33,7 +34,34 @@ const StartScreen = () => {
     <>
       <div className="yellow-background-layer"></div>
       <div className="start-screen-content">
-        <div className="donut-elements"></div>
+        <div className="donut-elements">
+          <div className="unicorn-donut">
+            <Donut
+              variant="static"
+              donutSrc="assets/unicorn_dust.svg"
+              width="auto"
+              height="auto"
+            />
+          </div>
+
+          <div className="sugar-particles">
+            <Donut
+              variant="static"
+              donutSrc="assets/sparkles.svg"
+              width="auto"
+              height="auto"
+            />
+          </div>
+
+          <div className="true-blood-donut">
+            <Donut
+              variant="static"
+              donutSrc="assets/true_blood.svg"
+              width="auto"
+              height="auto"
+            />
+          </div>
+        </div>
 
         <div className="footer-elements">
           <div className="title-elements">

@@ -24,6 +24,7 @@
   position: relative;
 }
 
+
 .start-screen-content .footer-elements {
   width: 100vw;
   height: 50vh;
@@ -54,4 +55,27 @@
     font-size: 48px;
     line-height: 72px;
     cursor: pointer;
+}
+
+.donut-elements .unicorn-donut {
+    width: 260px;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+}
+
+.donut-elements .sugar-particles {
+    width: 580px;
+    height: 460px;
+    position: absolute;
+    top: -120px;
+    left: -60px;
+    transform: rotate(-180deg) scale(.8);
+}
+
+.donut-elements .true-blood-donut {
+    width: 260px;
+    position: absolute;
+    top: 160px;
+    right: -20px;
 }
