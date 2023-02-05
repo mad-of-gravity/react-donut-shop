@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Donut from "../../DonutComponent/Donut";
 import Title from "../../TitleComponent/Title";
 import "./styles.css";
@@ -17,7 +17,6 @@ const ReadyScreen = () => {
 
   useEffect(() => {
     const url = localStorage.getItem("selected donut");
-    console.log(url);
     setDonutURL(url);
   }, []);
 
