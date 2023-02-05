@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Donut from "../../DonutComponent/Donut";
 import Title from "../../TitleComponent/Title";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 
 const ReadyScreen = () => {
   const [donutURL, setDonutURL] = useState("");
+  const navigate = useNavigate();
 
   const titleStyle = {
     fontFamily: "'Outfit', sans-serif",
@@ -19,6 +21,11 @@ const ReadyScreen = () => {
     const url = localStorage.getItem("selected donut");
     setDonutURL(url);
   }, []);
+
+  //Redirect to start screen
+  const handleDoneClick = () => {
+    navigate("/");
+  }
 
   return (
     <>
@@ -39,7 +46,7 @@ const ReadyScreen = () => {
           </Title>
         </div>
 
-        <button className="done-button" onClick={() => console.log("Done has been clicked")}>
+        <button className="done-button" onClick={handleDoneClick}>
           Done
         </button>
       </div>
