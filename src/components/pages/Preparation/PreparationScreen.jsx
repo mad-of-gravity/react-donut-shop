@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Donut from "../../DonutComponent/Donut";
-import Title from "../../Title/Title";
+import Title from "../../TitleComponent/Title";
 import "./styles.css";
 
 
